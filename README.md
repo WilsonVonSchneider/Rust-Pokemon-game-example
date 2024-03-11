@@ -64,12 +64,6 @@ tests file; if tests are too large, can be refactored into a dir (as described a
 
 Errors are handled throughout the application in a central place, located inside the `libs/error` library.
 
-For more info see:
-
-- [Error handling README](./libs/error/README.md#error-handling)
-  - [How to add errors](./libs/error/README.md#how-to-add-errors)
-  - [Error Index](./libs/error/README.md#error-index)
-
 ## Credits
 
 This app was created by Matej Zagar.
