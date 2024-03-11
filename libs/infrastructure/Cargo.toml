@@ -1,0 +1,28 @@
+[package]
+name = "infrastructure"
+version = "0.1.0"
+edition = "2021"
+publish = false
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[features]
+dev = []
+
+[lib]
+test = false
+doctest = false
+
+[dependencies]
+
+# database stuff
+diesel = { version = "2.1.0", features = ["postgres", "r2d2"] }
+postgres = "0.17"
+
+#helpers
+dotenv = "0.15.0"
+
+config = { path = "../config" }
+error = { path = "../error" }
+
+

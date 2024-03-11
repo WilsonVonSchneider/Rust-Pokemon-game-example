@@ -1,0 +1,9 @@
+[workspace]
+members = [  
+            
+	"libs/infrastructure",
+    "libs/support",
+              
+	# Binary applications
+	"bins/app"
+]

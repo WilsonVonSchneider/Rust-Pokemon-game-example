@@ -1,0 +1,40 @@
+[package]
+edition = "2021"
+name = "support"
+publish = false
+version = "0.1.0"
+
+[dependencies]
+
+log = "0.4.17"
+zxcvbn = "2.2.1"
+
+# Http stuff
+actix-web = "4.3.1"
+reqwest = { version = "0.11.10", features = ["json", "blocking"] }
+
+tokio = { version = "1.31.0", features = ["full"] }
+
+# database stuff
+diesel = { version = "2.1.0", features = [
+    "postgres",
+    "r2d2",
+    "chrono"
+] }
+chrono = { version = "0.4.26", features = ["serde"] }
+
+# serde
+serde = { version = "1.0", features = ["derive"] }
+
+lettre = "0.10"
+dotenv = "0.15.0"
+hmac = "0.12.1"
+jwt = "0.16.0"
+sha2 = "0.10.7"
+rand = "0.8"
+
+
+# Workspace
+infrastructure = { path = "../infrastructure", features = ["dev"] }
+config = { path = "../config" }
+error = { path = "../error" }
